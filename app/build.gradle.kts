@@ -15,7 +15,12 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    dataBinding {
+        enable=true
+    }
+    viewBinding {
+        enable=true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -40,4 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.recyclerview)
 }
